@@ -3,3 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* header */
+header {
+  display: flex;
+  height: calc (100vh - 40px);
+  justify-content: flex-end;
+  background-color: rgb(255, 255, 255);
+}
+
+.right-head  {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  margin: 8px 0;
+  align-items: center;  
+}
+
+.speaker-view, .crossed-arrows {
+  background-color: rgb(74,73,75);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.speaker-view i {
+  padding-right: 4px;
+}
+
+.speaker-view {
+  margin-right: 14px;
+}
+
+.crossed-arrows {
+  margin-right: 6px;
+}
+
+/* main */ 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 24px;
+}
+
+.goat {
+  position: relative;
+  justify-content: space-around;
+  margin: 6px;
+}
+
+.goat-name {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  color: white;
+  background-color: rgba(74,73,75, .5);
+  padding: 8px;
+}

@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+
 }
 
 /* header */
@@ -48,20 +48,21 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: black;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 24px;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .goat {
   position: relative;
-  padding: 4px;
+  padding: 2px;
 }
 
 .goat-name {
   position: absolute;
-  bottom: 10px;
-  left: 8px;
+  bottom: 5px;
+  left: 0px;
   font-size: 14px;
   color: white;
   background-color: rgba(74,73,75, .5);
@@ -69,3 +70,61 @@ header {
 }
  
 /* footer */
+footer {
+  display: flex;
+  height: 80px;
+  color: white;
+  font-size: 14px;
+  background-color: rgb(56, 18, 194);
+  border-radius: 0px 0px 20px 20px;
+  justify-content: space-between;
+}
+
+.left, .right {
+  flex-basis: 20%;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.center {
+  flex-basis: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  text-align: center;
+  padding: 0 8pxpx;
+}
+
+.left p, .center p, .right p {
+  padding: 6px;
+}
+
+.mute i, .stop-video i, .center i {
+  font-size: 24px;
+}
+
+.icon i{
+  font-size: 12px;
+  padding: 0 16px;
+}
+
+.center {
+  display: flex;
+  align-content: center;
+  padding: 32px;
+}
+
+.center ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+
+.share-screen i {
+  color: rgb(52,202,43);
+}
+
+
